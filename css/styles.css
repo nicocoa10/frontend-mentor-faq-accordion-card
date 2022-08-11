@@ -18,7 +18,7 @@ body {
     width: 90%;
     max-width: 500px;
     margin: 0 auto;
-    margin-top: 10rem;
+    margin-top: 25vh;
     border-radius: 20px;
     background-color: white;
     padding-bottom: 1rem;
@@ -88,7 +88,11 @@ body {
     align-items: center;
     padding: 1.5rem 0;
     border-bottom: 1px solid black;
+}
+
+.arrow-svg {
     cursor: pointer;
+
 }
 
 .question {
@@ -114,5 +118,84 @@ body {
 
 .rotate {
     -webkit-transform: rotate(180deg);
+
+}
+
+.img-container-box {
+    display: none;
+}
+
+@media (min-width: 1440px) {
+
+    .container {
+        max-width: 900px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .heading {
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .img {
+        content: url("../images/illustration-woman-online-desktop.svg");
+        /* text-align: center; */
+        position: relative;
+        right: 10.5rem;
+        top: -5rem;
+        /* border: 1px solid red; */
+
+    }
+
+    .img-container-shadow {
+        /* width: 200px; */
+        /* overflow: hidden; */
+
+        /* height: 200px; */
+
+    }
+
+    .question-block-section {
+        margin-top: 3rem;
+        margin-right: 3rem;
+        /* border: 1px solid red; */
+    }
+
+    .img-container-box {
+        display: block;
+        position: relative;
+        top: 15rem;
+        left: -5rem;
+        /* border: 1px solid red; */
+        z-index: 1000;
+    }
+
+    .img-box {
+        content: url("../images/illustration-box-desktop.svg");
+        z-index: 1000;
+
+    }
+
+    .img-shadow {
+        position: relative;
+        top: -4rem;
+        left: 3rem;
+
+    }
+
+    .imgs {
+        width: 700px;
+        height: 700px;
+        position: fixed;
+        max-width: 700px;
+        /* top: -8rem;*/
+        left: 10rem;
+        top: 7rem;
+        /* border: 1px solid red; */
+
+    }
 
 }
